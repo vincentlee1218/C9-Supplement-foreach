@@ -36,7 +36,8 @@ public class MovieListAL {
         int highestIndex=0, count=0;
         for (Movie m : movies) {
             double x = m.getRating();
-            if (x > highestRating) { highestRating = x; highestIndex = count; count++; }
+            if (x > highestRating) { highestRating = x; highestIndex = count;}
+            count++;
         }
         return movies.get(highestIndex);
     }
